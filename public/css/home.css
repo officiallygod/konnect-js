@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+    font-family: 'Lato' !important;
+}
+
+/* Main Color Background
+
+body {
+    background: linear-gradient(-45deg, rgba(238, 119, 82, 0.8), rgba(231, 60, 126, 0.8), rgba(35, 166, 213, 0.8), rgba(35, 215, 173, 0.8));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+/* Main Header */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 55vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.logout-btn-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 2;
+    padding: 15px;
+    letter-spacing: 1.5px;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+
+    header video {
+        display: none;
+    }
+}
+
+/* TEXT FILES */
+.main_head {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sub-head {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+.sub-small {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+/* CARD DESIGN */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.courses-container {}
+
+.course {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    width: 650px;
+}
+
+.course h6 {
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.course h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.course-preview {
+    background-color: #2A265F;
+    color: #fff;
+    padding: 20px;
+    max-width: 250px;
+}
+
+.course-preview a {
+    color: #fff;
+    display: inline-block;
+    font-size: 8px;
+    opacity: 0.7;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.course-preview h6 {
+    font-size: 12px;
+}
+
+.course-preview h2 {
+    font-size: 20px;
+}
+
+.course-info {
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.course-info h2 {
+    font-size: 25px
+}
+
+/* SOCIAL MEDIA  */
+
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns .btn:before {
+    top: 90%;
+    left: -110%;
+}
+
+.social-btns .btn .fa {
+    transform: scale(0.8);
+}
+
+.social-btns .btn.github:before {
+    background-color: #1d1a24;
+    /* background-color: #7554D9; */
+}
+
+.social-btns .btn.github .fa {
+    color: #1d1a24;
+    /* color: #7554D9; */
+}
+
+.social-btns .btn.twitter:before {
+    background-color: #3cf;
+}
+
+.social-btns .btn.twitter .fa {
+    color: #3cf;
+}
+
+.social-btns .btn.google:before {
+    background-color: #dc4a38;
+}
+
+.social-btns .btn.google .fa {
+    color: #dc4a38;
+}
+
+.social-btns .btn.linkedin:before {
+    background-color: #0077B5;
+}
+
+.social-btns .btn.linkedin .fa {
+    color: #0077B5;
+}
+
+.social-btns .btn.skype:before {
+    background-color: #00aff0;
+}
+
+.social-btns .btn.skype .fa {
+    color: #00aff0;
+}
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+    color: #fff;
+    transform: scale(1);
+}
+
+.social-btns {
+    height: 100px;
+    margin-bottom: 4rem;
+    font-size: 0;
+    display: block;
+    text-align: center;
+}
+
+.social-btns .btn {
+    display: inline-block;
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    opacity: 0.99;
+}
+
+.social-btns .btn:before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.social-btns .btn .fa {
+    font-size: 38px;
+    vertical-align: middle;
+}

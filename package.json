@@ -1,0 +1,20 @@
+{
+  "name": "konnect",
+  "version": "1.0.0",
+  "description": "An API to Konnect seamlessly.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "officiallygod",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.5.0",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  }
+}
